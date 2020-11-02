@@ -2,6 +2,8 @@ import { GetServerSideProps } from "next";
 
 import { Title } from "../styles/pages/Home";
 
+import SEO from "@/components/SEO";
+
 interface IProduct {
   id: string;
   title: string;
@@ -20,6 +22,12 @@ export default function Home({ recommededProducts }: HomeProps) {
 
   return (
     <div>
+      <SEO
+        title="DevCommerce, your best e-commerce!"
+        shouldExcludeTitleSuffix
+        image="boost.png"
+      />
+
       <section>
         <Title>Products</Title>
 
