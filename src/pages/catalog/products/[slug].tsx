@@ -2,9 +2,7 @@ import { client } from "@/lib/prismic";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useRouter } from "next/router";
 import { Document } from "prismic-javascript/types/documents";
-import Prismic from "prismic-javascript";
 
-import Link from "next/link";
 import PrismicDOM from "prismic-dom";
 
 interface ProductProps {
